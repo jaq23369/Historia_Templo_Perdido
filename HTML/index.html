@@ -1,17 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Historia Interactiva</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Templo Perdido - Página Principal</title>
 </head>
 <body>
-    <header>
-        <h1>¡Bienvenido a mi aventura!</h1>
-    </header>
 
-    <footer>
-        <p>&copy; 2025 Joel Jaquez</p>
-    </footer>
+<header>
+  <h1>Templo Perdido: El Santuario Prohibido</h1>
+</header>
+
+<figure>
+  <img src="assets/templo.jpeg" alt="Entrada del templo antiguo" width="500">
+  <figcaption>Un misterioso templo oculto en lo profundo de la selva a sido descubierto, porfavor primero registrate para concerte mejor.</figcaption>
+</figure>
+
+<section>
+  <h2>Registro del Explorador</h2>
+  <form action="submit_form.php" method="POST">
+    <label for="nombre_explorador">Nombre:</label>
+    <input type="text" id="nombre_explorador" name="nombre_explorador" required><br>
+
+    <label for="correo_explorador">Correo Electrónico:</label>
+    <input type="email" id="correo_explorador" name="correo_explorador" required><br>
+
+    <label for="rol">Elige tu rol:</label>
+    <select id="rol" name="rol">
+      <option value="explorador">Explorador</option>
+      <option value="arqueologo">Arqueólogo</option>
+      <option value="guardia">Guardia</option>
+    </select><br>
+
+    <label for="notas">Notas:</label>
+    <textarea id="notas" name="notas" rows="3"></textarea><br>
+
+    <label>Método de Contacto Preferido:</label><br>
+    <input type="radio" id="contacto_correo" name="metodo_contacto" value="correo">
+    <label for="contacto_correo">Correo Electrónico</label>
+
+    <input type="radio" id="contacto_telefono" name="metodo_contacto" value="telefono">
+    <label for="contacto_telefono">Teléfono</label><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<section>
+  <h2>Registros de Expediciones</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Explorador</th>
+        <th>Última Ubicación Conocida</th>
+        <th>Destino</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dr. Thompson</td>
+        <td>Cámara de las Pruebas</td>
+        <td>Desconocido</td>
+      </tr>
+      <tr>
+        <td>Amelia Rose</td>
+        <td>Salón Principal</td>
+        <td>Sobrevivió</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Exploradores Furtivos</td>
+        <td>Bóveda Oculta</td>
+        <td>Desaparecidos</td>
+      </tr>
+      <tr>
+        <td>Patio Exterior</td>
+        <td>Huyeron</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Datos recopilados de pergaminos antiguos y notas de viajeros.</td>
+      </tr>
+    </tfoot>
+  </table>
+</section>
+
+<aside>
+  <details>
+    <summary>Rumores del Templo</summary>
+    <p>Algunos exploradores afirman que existe una salida secreta si reúnes cinco amuletos ocultos.</p>
+  </details>
+</aside>
+
+<audio controls>
+  <source src="assets/musica-fondo.mp3" type="audio/mpeg">
+  Tu navegador no admite el elemento de audio.
+</audio>
+
+<video width="300" controls>
+  <source src="assets/video-templo.mp4" type="video/mp4">
+  Lo sentimos, tu navegador no admite videos incrustados.
+</video>
+
+<article>
+  <p>¡Bienvenido, valiente explorador! Has encontrado la entrada de un templo perdido. 
+     Se dice que alberga antiguos tesoros... y maldiciones inimaginables. 
+     ¿Te atreves a entrar?</p>
+  <p>Elige cómo comenzar tu misión:</p>
+</article>
+
+<nav>
+  <ul>
+    <li><a href="paginas/pagina1.html">Entrar al Templo</a></li>
+    <li><a href="paginas/pagina2.html">Reunir Suministros en el Campamento</a></li>
+    <li><a href="paginas/pagina3.html">Consultar Leyendas Locales en el Pueblo</a></li>
+  </ul>
+</nav>
+
+<footer>
+  <p>&copy; 2025 Expediciones del Templo Perdido</p>
+</footer>
+
 </body>
 </html>
+
